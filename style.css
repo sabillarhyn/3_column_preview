@@ -1,0 +1,160 @@
+* {
+    border: 0;
+    margin: 0;
+  }
+
+.body{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    max-width: 1440px;
+    min-width: 375px;
+}
+
+.maincard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.cardcontent{
+    display: flex;
+    width: 870px;
+}
+
+.splitcard{
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 40px;
+
+}
+
+
+/* color */
+
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.dark-cyan{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* content */
+
+
+.img{
+    margin-bottom: 30px;
+}
+
+h1{
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+
+p{
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+button{
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 19px;
+    height: 40px;
+    width: 120px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    border: none;
+    margin-top: 60px;
+}
+
+#sedan-button{
+    color: hsl(31, 77%, 52%);
+}
+
+#sedan-button:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#suv-button{
+    color: hsl(184, 100%, 22%);
+}
+
+#suv-button:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#luxury-button{
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury-button:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+/* media query  */
+
+@media screen and (max-width:1200px) {
+
+    .maincard{
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .cardcontent{
+        flex-direction: column;
+        width: 83%;
+    }
+
+    .splitcard{
+        width: 100%;
+    }
+
+    .orange{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 5px 5px 0 0;
+    }
+    .dark-cyan{
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .very-dark-cyan{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 5px 5px;
+    }
+
+    button{
+        margin-top: 20px;
+    }
+    
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
